@@ -1,0 +1,20 @@
+// sizing shortcuts
+
+@mixin size($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin min-size($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin max-size($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin square($size) {
+  @include size($size, $size);
+}

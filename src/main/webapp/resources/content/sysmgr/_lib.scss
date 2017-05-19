@@ -1,0 +1,329 @@
+body {
+  width: 100%;
+  min-height: 100%;
+  background-color: #f6f6f6;
+  font: 63% 'Microsoft YaHei', Helvetica Neue, Helvetica, STHeitiSC-Light, sans-serif!important;
+  button, input, select, textarea {
+	font: 1.2em 'Microsoft YaHei', Helvetica Neue, Helvetica, STHeitiSC-Light, sans-serif;
+  }
+}
+
+// main-content style
+.main-content {
+  padding-top: 60px;
+  padding-left: 180px;
+  background-color: #f6f6f6;
+  .main-info {
+	border: 1px solid #dfdfdf;
+	background-color: #fff;
+	h3.head {
+	  background-color: #efefef;
+	  font-size: 1.6em;
+	  padding: 4px 10px;
+	  border-bottom: 1px solid #dfdfdf;
+	  font-weight: normal;
+	}
+	.tab-nav {
+	  background-color: #f6f6f6;
+	  padding: 0 10px;
+	  border-bottom: 1px solid #dfdfdf;
+	  font-weight: normal;
+	  a {
+		position: relative;
+		&.on {
+		  &:before, &:after {
+			content: '';
+			position: absolute;
+			left: 0;
+			right: 0;
+			height: 1px;
+			background-color: #1daa62;
+		  }
+		}
+		&:before {
+		  top: -1px;
+		}
+		&:after {
+		  bottom: -1px;
+		}
+	  }
+	}
+	.tab-content {
+	  .center-block {
+		@include center-block;
+		width: 489px;
+	  }
+	}
+
+  }
+}
+
+// header style
+header {
+  @include size(auto, 60px);
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 180px;
+  right: 0;
+  padding: 0 20px;
+  line-height: 60px;
+  background-color: #fff;
+  border-bottom: 1px solid #dfdfdf;
+  .logo {
+	color: #2a2e33;
+	font-size: 1.8em;
+	font-weight: normal;
+	height: 100%;
+  }
+  .user-info {
+	font: 1.4em 'Lantinghei TC', 'Microsoft YaHei', Helvetica Neue, Helvetica, STHeitiSC-Light, sans-serif;
+	height: 100%;
+	line-height: 60px;
+	i {
+	  @include size(48px, 60px);
+	  @include bg-default;
+	  display: inline-block;
+	  margin-right: 10px;
+	  background-image: url("../images/sysmgr/avatar.png");
+	  float: left;
+	}
+	span {
+	  position: relative;
+	  margin-right: 31px;
+	  color: #5f6266;
+	  &:after {
+		@include size(1px, 10px);
+		position: absolute;
+		top: 50%;
+		margin-top: -5px;
+		content: '';
+		right: -16px;
+		background-color: #cacbcc;
+	  }
+	}
+	a {
+	  cursor: pointer;
+	  color: #5f6266;
+	}
+  }
+}
+
+// nav style
+nav {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 180px;
+  background-color: #2a2e33;
+  z-index: 999;
+  overflow: hidden;
+  .mCSB_container {
+	padding-bottom: 130px;
+  }
+  .logo {
+	@include size(100%, 84px);
+	@include bg-default(no-repeat, -27px, center);
+	@include text-hide;
+	background-image: url("../images/sysmgr/logo.png");
+	border-bottom: 1px solid #313539;
+	margin-bottom: 40px;
+  }
+  .slide-nav {
+	li {
+	  position: relative;
+	  a {
+		padding-left: 42px;
+		@include size(100%, 60px);
+		line-height: 60px;
+		display: block;
+		color: #7e868c;
+		font-size: 1.6em;
+	  }
+	}
+	> li {
+	  > a {
+		&:before {
+		  position: absolute;
+		  content: '';
+		  left: 18px;
+		  @include size(17px, 20px);
+		  background-image: url("../images/sysmgr/nav-icon.png");
+		  background-repeat: no-repeat;
+		  top: 20px;
+		}
+	  }
+	  &:nth-child(1) a:before {
+		background-position: 0 0;
+		top: 22px;
+	  }
+	  &:nth-child(2) a:before {
+		background-position: 0 -18px;
+	  }
+	  &:nth-child(3) a:before {
+		background-position: 0 -38px;
+	  }
+	  &:nth-child(4) a:before {
+		background-position: 0 -59px;
+		height: 18px;
+	  }
+	  &.ar {
+		&:after {
+		  content: '';
+		  @include border-arrow-rgt(4px, 4px, #7e868c);
+		  position: absolute;
+		  right: 34px;
+		  top: 26px;
+		}
+		&.active {
+		  &:after {
+			@include border-arrow-btm(4px, 4px, #fff);
+			right: 32px;
+			top: 28px;
+		  }
+		}
+	  }
+	  &:hover, &.active {
+		&:before {
+		  @include size(8px, 60px);
+		  content: '';
+		  background-color: #1daa62;
+		  position: absolute;
+		  top: 0;
+		  left: 0;
+		}
+		> a {
+		  background-color: #212429;
+		  color: #fff;
+		  &:before {
+			background-image: url("../images/sysmgr/nav-hover-icon.png");
+		  }
+		}
+	  }
+	  > ul {
+		display: none;
+		> li {
+		  a {
+			height: 50px;
+			line-height: 50px;
+			font-size: 1.3em;
+		  }
+		  &:hover, &.active {
+			a {
+			  background-color: #262a2f;
+			  color: #fff;
+			}
+		  }
+		}
+	  }
+
+	}
+  }
+  .mCSB_container {
+	margin-right: 0;
+	min-height: 554px;
+  }
+  .pack-up {
+	@include size(100%, 30px);
+	color: #7e868c;
+	position: absolute;
+	margin-top: 100px;
+	&:before {
+	  left: 2px;
+	  right: 2px;
+	  height: 1px;
+	  background-color: #7e868c;
+	  content: '';
+	  position: absolute;
+	  top: 50%;
+	}
+	i {
+	  @include box-center(30px, 30px);
+	  background-color: #2a2e33;
+	  text-align: center;
+	  line-height: 30px;
+	  cursor: pointer;
+	}
+  }
+}
+
+body {
+  &.nav-close {
+	nav {
+	  width: 30px;
+	  .logo {
+		display: none;
+	  }
+	  .slide-nav {
+		display: none !important;
+	  }
+	  .pack-up {
+		top: 524px;
+		margin-top: 0;
+	  }
+	}
+	.main-content {
+	  padding-left: 30px;
+	}
+	header {
+	  left: 30px;
+	}
+  }
+}
+
+// title style
+.title {
+  display: block;
+  padding: 0 20px;
+  background-color: #fff;
+  @include size(100%, 60px);
+  font-weight: normal;
+  color: #2a2e33;
+  a {
+	line-height: 60px;
+	font-size: 14px;
+	display: inline-block;
+  }
+  .first {
+	font-size: 18px;
+  }
+}
+
+// search style
+.search {
+  background-color: #fff;
+  .form-group {
+	margin-bottom: 0;
+	width: auto;
+	input {
+	  width: 400px !important;
+	  &::-moz-placeholder {
+		color: #dad9d9;
+		font-family: 'Lantinghei TC';
+	  }
+	  &::-webkit-input-placeholder {
+		color: #dad9d9;
+		font-family: 'Lantinghei TC';
+	  }
+	  &.short {
+		width: 310px !important;
+		@media screen and (max-width: 1500px) {
+		  width: auto !important;
+		}
+	  }
+	}
+  }
+  .line{
+	font-size: 14px;
+	line-height: 30px;
+  }
+}
+
+.home {
+  position: relative;
+  @include size(100%,85%);
+  img {
+	@include box-center(1043px,520px);
+  }
+}

@@ -1,0 +1,120 @@
+2017-03-20 10:54:39.030 [main] INFO  com.zzc.core.log.OperateLogger
+                -描述: 采购商管理,	目标对象ID: 3,	目标对象名称: 采购商信息,	操作类型: CREATE ,	执行消息: 
+用户~~null
+信息~~{"status":1,"orgCode":"CGS-abcd-0","orgName":"测试采购商0","orgLevel":1,"legalName":"测试法人0","tel":"15822248411","level":1}
+2017-03-20 10:54:39.047 [main] INFO  com.zzc.core.log.OperateLogger
+                -描述: 采购商管理,	目标对象ID: 3,	目标对象名称: 采购商信息,	操作类型: CREATE ,	执行消息: 
+用户~~null
+信息~~{"status":1,"orgCode":"CGS-abcd-1","orgName":"测试采购商1","orgLevel":1,"legalName":"测试法人1","tel":"15822248411","level":1}
+2017-03-20 10:54:39.063 [main] INFO  com.zzc.core.log.OperateLogger
+                -描述: 采购商管理,	目标对象ID: 3,	目标对象名称: 采购商信息,	操作类型: CREATE ,	执行消息: 
+用户~~null
+信息~~{"status":1,"orgCode":"CGS-abcd-2","orgName":"测试采购商2","orgLevel":1,"legalName":"测试法人2","tel":"15822248411","level":1}
+2017-03-20 10:54:39.080 [main] INFO  com.zzc.core.log.OperateLogger
+                -描述: 采购商管理,	目标对象ID: 3,	目标对象名称: 采购商信息,	操作类型: CREATE ,	执行消息: 
+用户~~null
+信息~~{"status":1,"orgCode":"CGS-abcd-3","orgName":"测试采购商3","orgLevel":1,"legalName":"测试法人3","tel":"15822248411","level":1}
+2017-03-20 10:54:39.101 [main] INFO  com.zzc.core.log.OperateLogger
+                -描述: 采购商管理,	目标对象ID: 3,	目标对象名称: 采购商信息,	操作类型: CREATE ,	执行消息: 
+用户~~null
+信息~~{"status":1,"orgCode":"CGS-abcd-4","orgName":"测试采购商4","orgLevel":1,"legalName":"测试法人4","tel":"15822248411","level":1}
+2017-03-20 10:54:39.127 [main] INFO  com.zzc.core.log.OperateLogger
+                -描述: 采购商管理,	目标对象ID: 3,	目标对象名称: 采购商信息,	操作类型: CREATE ,	执行消息: 
+用户~~null
+信息~~{"status":1,"orgCode":"CGS-abcd-5","orgName":"测试采购商5","orgLevel":1,"legalName":"测试法人5","tel":"15822248411","level":1}
+2017-03-20 10:54:39.145 [main] INFO  com.zzc.core.log.OperateLogger
+                -描述: 采购商管理,	目标对象ID: 3,	目标对象名称: 采购商信息,	操作类型: CREATE ,	执行消息: 
+用户~~null
+信息~~{"status":1,"orgCode":"CGS-abcd-6","orgName":"测试采购商6","orgLevel":1,"legalName":"测试法人6","tel":"15822248411","level":1}
+2017-03-20 10:54:39.165 [main] INFO  com.zzc.core.log.OperateLogger
+                -描述: 采购商管理,	目标对象ID: 3,	目标对象名称: 采购商信息,	操作类型: CREATE ,	执行消息: 
+用户~~null
+信息~~{"status":1,"orgCode":"CGS-abcd-7","orgName":"测试采购商7","orgLevel":1,"legalName":"测试法人7","tel":"15822248411","level":1}
+2017-03-20 10:54:39.183 [main] INFO  com.zzc.core.log.OperateLogger
+                -描述: 采购商管理,	目标对象ID: 3,	目标对象名称: 采购商信息,	操作类型: CREATE ,	执行消息: 
+用户~~null
+信息~~{"status":1,"orgCode":"CGS-abcd-8","orgName":"测试采购商8","orgLevel":1,"legalName":"测试法人8","tel":"15822248411","level":1}
+2017-03-20 10:54:39.199 [main] INFO  com.zzc.core.log.OperateLogger
+                -描述: 采购商管理,	目标对象ID: 3,	目标对象名称: 采购商信息,	操作类型: CREATE ,	执行消息: 
+用户~~null
+信息~~{"status":1,"orgCode":"CGS-abcd-9","orgName":"测试采购商9","orgLevel":1,"legalName":"测试法人9","tel":"15822248411","level":1}
+2017-03-20 10:54:39.217 [main] INFO  com.zzc.core.log.OperateLogger
+                -描述: 采购商管理,	目标对象ID: 3,	目标对象名称: 采购商信息,	操作类型: CREATE ,	执行消息: 
+用户~~null
+信息~~{"status":1,"orgCode":"CGS-abcd-10","orgName":"测试采购商10","orgLevel":1,"legalName":"测试法人10","tel":"15822248411","level":1}
+2017-03-20 10:54:39.236 [main] INFO  com.zzc.core.log.OperateLogger
+                -描述: 采购商管理,	目标对象ID: 3,	目标对象名称: 采购商信息,	操作类型: CREATE ,	执行消息: 
+用户~~null
+信息~~{"status":1,"orgCode":"CGS-abcd-11","orgName":"测试采购商11","orgLevel":1,"legalName":"测试法人11","tel":"15822248411","level":1}
+2017-03-20 10:54:39.253 [main] INFO  com.zzc.core.log.OperateLogger
+                -描述: 采购商管理,	目标对象ID: 3,	目标对象名称: 采购商信息,	操作类型: CREATE ,	执行消息: 
+用户~~null
+信息~~{"status":1,"orgCode":"CGS-abcd-12","orgName":"测试采购商12","orgLevel":1,"legalName":"测试法人12","tel":"15822248411","level":1}
+2017-03-20 10:54:39.268 [main] INFO  com.zzc.core.log.OperateLogger
+                -描述: 采购商管理,	目标对象ID: 3,	目标对象名称: 采购商信息,	操作类型: CREATE ,	执行消息: 
+用户~~null
+信息~~{"status":1,"orgCode":"CGS-abcd-13","orgName":"测试采购商13","orgLevel":1,"legalName":"测试法人13","tel":"15822248411","level":1}
+2017-03-20 10:54:39.284 [main] INFO  com.zzc.core.log.OperateLogger
+                -描述: 采购商管理,	目标对象ID: 3,	目标对象名称: 采购商信息,	操作类型: CREATE ,	执行消息: 
+用户~~null
+信息~~{"status":1,"orgCode":"CGS-abcd-14","orgName":"测试采购商14","orgLevel":1,"legalName":"测试法人14","tel":"15822248411","level":1}
+2017-03-20 10:54:39.305 [main] INFO  com.zzc.core.log.OperateLogger
+                -描述: 采购商管理,	目标对象ID: 3,	目标对象名称: 采购商信息,	操作类型: CREATE ,	执行消息: 
+用户~~null
+信息~~{"status":1,"orgCode":"CGS-abcd-15","orgName":"测试采购商15","orgLevel":1,"legalName":"测试法人15","tel":"15822248411","level":1}
+2017-03-20 10:54:39.320 [main] INFO  com.zzc.core.log.OperateLogger
+                -描述: 采购商管理,	目标对象ID: 3,	目标对象名称: 采购商信息,	操作类型: CREATE ,	执行消息: 
+用户~~null
+信息~~{"status":1,"orgCode":"CGS-abcd-16","orgName":"测试采购商16","orgLevel":1,"legalName":"测试法人16","tel":"15822248411","level":1}
+2017-03-20 10:54:39.335 [main] INFO  com.zzc.core.log.OperateLogger
+                -描述: 采购商管理,	目标对象ID: 3,	目标对象名称: 采购商信息,	操作类型: CREATE ,	执行消息: 
+用户~~null
+信息~~{"status":1,"orgCode":"CGS-abcd-17","orgName":"测试采购商17","orgLevel":1,"legalName":"测试法人17","tel":"15822248411","level":1}
+2017-03-20 10:54:39.352 [main] INFO  com.zzc.core.log.OperateLogger
+                -描述: 采购商管理,	目标对象ID: 3,	目标对象名称: 采购商信息,	操作类型: CREATE ,	执行消息: 
+用户~~null
+信息~~{"status":1,"orgCode":"CGS-abcd-18","orgName":"测试采购商18","orgLevel":1,"legalName":"测试法人18","tel":"15822248411","level":1}
+2017-03-20 10:54:39.370 [main] INFO  com.zzc.core.log.OperateLogger
+                -描述: 采购商管理,	目标对象ID: 3,	目标对象名称: 采购商信息,	操作类型: CREATE ,	执行消息: 
+用户~~null
+信息~~{"status":1,"orgCode":"CGS-abcd-19","orgName":"测试采购商19","orgLevel":1,"legalName":"测试法人19","tel":"15822248411","level":1}
+2017-03-20 10:54:39.385 [main] INFO  com.zzc.core.log.OperateLogger
+                -描述: 采购商管理,	目标对象ID: 3,	目标对象名称: 采购商信息,	操作类型: CREATE ,	执行消息: 
+用户~~null
+信息~~{"status":1,"orgCode":"CGS-abcd-20","orgName":"测试采购商20","orgLevel":1,"legalName":"测试法人20","tel":"15822248411","level":1}
+2017-03-20 10:54:39.402 [main] INFO  com.zzc.core.log.OperateLogger
+                -描述: 采购商管理,	目标对象ID: 3,	目标对象名称: 采购商信息,	操作类型: CREATE ,	执行消息: 
+用户~~null
+信息~~{"status":1,"orgCode":"CGS-abcd-21","orgName":"测试采购商21","orgLevel":1,"legalName":"测试法人21","tel":"15822248411","level":1}
+2017-03-20 10:54:39.417 [main] INFO  com.zzc.core.log.OperateLogger
+                -描述: 采购商管理,	目标对象ID: 3,	目标对象名称: 采购商信息,	操作类型: CREATE ,	执行消息: 
+用户~~null
+信息~~{"status":1,"orgCode":"CGS-abcd-22","orgName":"测试采购商22","orgLevel":1,"legalName":"测试法人22","tel":"15822248411","level":1}
+2017-03-20 10:54:39.434 [main] INFO  com.zzc.core.log.OperateLogger
+                -描述: 采购商管理,	目标对象ID: 3,	目标对象名称: 采购商信息,	操作类型: CREATE ,	执行消息: 
+用户~~null
+信息~~{"status":1,"orgCode":"CGS-abcd-23","orgName":"测试采购商23","orgLevel":1,"legalName":"测试法人23","tel":"15822248411","level":1}
+2017-03-20 10:54:39.450 [main] INFO  com.zzc.core.log.OperateLogger
+                -描述: 采购商管理,	目标对象ID: 3,	目标对象名称: 采购商信息,	操作类型: CREATE ,	执行消息: 
+用户~~null
+信息~~{"status":1,"orgCode":"CGS-abcd-24","orgName":"测试采购商24","orgLevel":1,"legalName":"测试法人24","tel":"15822248411","level":1}
+2017-03-20 10:54:39.472 [main] INFO  com.zzc.core.log.OperateLogger
+                -描述: 采购商管理,	目标对象ID: 3,	目标对象名称: 采购商信息,	操作类型: CREATE ,	执行消息: 
+用户~~null
+信息~~{"status":1,"orgCode":"CGS-abcd-25","orgName":"测试采购商25","orgLevel":1,"legalName":"测试法人25","tel":"15822248411","level":1}
+2017-03-20 10:54:39.498 [main] INFO  com.zzc.core.log.OperateLogger
+                -描述: 采购商管理,	目标对象ID: 3,	目标对象名称: 采购商信息,	操作类型: CREATE ,	执行消息: 
+用户~~null
+信息~~{"status":1,"orgCode":"CGS-abcd-26","orgName":"测试采购商26","orgLevel":1,"legalName":"测试法人26","tel":"15822248411","level":1}
+2017-03-20 10:54:39.516 [main] INFO  com.zzc.core.log.OperateLogger
+                -描述: 采购商管理,	目标对象ID: 3,	目标对象名称: 采购商信息,	操作类型: CREATE ,	执行消息: 
+用户~~null
+信息~~{"status":1,"orgCode":"CGS-abcd-27","orgName":"测试采购商27","orgLevel":1,"legalName":"测试法人27","tel":"15822248411","level":1}
+2017-03-20 10:54:39.533 [main] INFO  com.zzc.core.log.OperateLogger
+                -描述: 采购商管理,	目标对象ID: 3,	目标对象名称: 采购商信息,	操作类型: CREATE ,	执行消息: 
+用户~~null
+信息~~{"status":1,"orgCode":"CGS-abcd-28","orgName":"测试采购商28","orgLevel":1,"legalName":"测试法人28","tel":"15822248411","level":1}
+2017-03-20 10:54:39.551 [main] INFO  com.zzc.core.log.OperateLogger
+                -描述: 采购商管理,	目标对象ID: 3,	目标对象名称: 采购商信息,	操作类型: CREATE ,	执行消息: 
+用户~~null
+信息~~{"status":1,"orgCode":"CGS-abcd-29","orgName":"测试采购商29","orgLevel":1,"legalName":"测试法人29","tel":"15822248411","level":1}

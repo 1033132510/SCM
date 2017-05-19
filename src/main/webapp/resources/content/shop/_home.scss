@@ -1,0 +1,94 @@
+// banner style start--------------------------------------------------
+.banner { @include size(920px, 300px); overflow: hidden;
+  .slick-arrow { position: absolute; @include text-hide; top: 50%; margin-top: -40px; cursor: pointer; }
+  .slick-prev { left: 0; z-index: 10; @include bg-image(40px, 80px, 0, -18px); }
+  .slick-next { right: 0px; z-index: 10; @include bg-image(40px, 80px, 0, -98px); }
+  .slick-dots { text-align: center; @include size(100%, 10px); position: absolute; left: 0; right: 0; bottom: 24px;
+	button { @include text-hide; }
+	li { @include square(10px); cursor: pointer; display: inline-block; background-color: $white; margin: 0 4px; border-radius: 50%;
+	  &.slick-active { background-color: #df0000; }
+	}
+  }
+  div {
+	a { @include square(100%); display: block; cursor: pointer; }
+  }
+}
+
+// banner style end----------------------------------------------------
+
+.adver { @include text-hide;
+  a { display: inline-block; cursor: pointer; }
+}
+
+// article style start-------------------------------------------------
+.article { margin-bottom: 20px;
+  h2 { @include size(100%, 40px); line-height: 38px; border-bottom: 2px solid; font-size: 18px; font-weight: normal;
+	span { float: left; @include square(38px); text-align: center; background-color: #f1f1f1; margin-right: 10px; }
+	.more { float: right; font-size: 12px; color: $color-main; cursor: pointer;
+	  &:hover { text-decoration: underline; }
+	}
+  }
+  .article-content { @include size(100%, 442px); border: 1px solid $color-border; border-top: none; position: relative;
+	.article-lt { @include size(239px, 100%); float: left; padding-top: 10px; background-color: #f8f8f8;
+	  > div { @include clearfix; }
+	  span { @include size(50%, 35px); float: left; margin: 3px 0; padding-left: 20px; line-height: 38px; font-size: 14px;
+		a { color: #333; cursor: pointer;
+		  &:hover { color: $green-light; }
+		}
+		&.img { height: 38px; padding-left: 0; text-align: center;
+		  a { display: inline-block; background-color: #fff; @include size(88px, 36px); border: 1px solid $color-border; position: relative; overflow: hidden;
+			&:hover { border-color: $green-light;
+			}
+		  }
+		  img { @include box-center(70px, 30px); }
+		}
+	  }
+	}
+	.article-md { @include size(663px, 100%); float: left;
+	  .item { float: left; @include size(221px, 221px); border-right: 1px solid #f1f1f1; border-bottom: 1px solid #f1f1f1; position: relative; overflow: hidden; cursor: pointer;
+		img { @include square(100%); @include transition(2s all ease); }
+		&:hover {
+		  img { @include scale(1.1); }
+		}
+	  }
+	}
+	.article-rt { @include size(296px, 100%); float: right; overflow: hidden;
+	  a { display: block; cursor: pointer;
+		img { @include square(100%); }
+	  }
+	}
+	&:after { position: absolute; content: ''; bottom: -1px; height: 1px; background-color: $color-border; width: 100%; }
+  }
+  &.floor1 {
+	h2 { border-color: $green-dark; color: $green-light; }
+  }
+  &.floor2 {
+	h2 { border-color: #e5004f; color: #e5004f; }
+  }
+  &.floor3 {
+	h2 { border-color: #1e81b4; color: #1e81b4; }
+  }
+  &.floor4 {
+	h2 { border-color: #dd00d5; color: #dd00d5; }
+  }
+}
+
+// article style end---------------------------------------------------
+
+// partners style start------------------------------------------------
+.partners { text-align: center; margin: 0 -34px 0 -34px; background-color: #fafafa; padding: 20px 0 10px 0;
+  h2 { margin-bottom: 10px; color: #221815; font-size: 18px; }
+  .partners-logo { @include text-hide; @include clearfix; width: 1100px; margin: 0 auto; }
+  a { @include size(200px, 84px); border: 1px solid $color-border; background-color: #fff;
+	float: left; margin: 10px; display: table; text-align: center; cursor: pointer; @include transition(.4s border ease);
+	i { display: table-cell; vertical-align: middle; }
+	img { max-width: 100%; max-height: 100%; }
+	&:hover { border-color: $green-light; }
+  }
+}
+
+// partners style end--------------------------------------------------
+
+
+
+

@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="renderer" content="webkit"/>
+    <meta content="IE=Edge,chrome=1" http-equiv="X-UA-Compatible"/>
+    <meta name="description" content=""/>
+    <meta name="author" content="zhanjun"/>
+    <title>直彩科技有限公司</title>
+
+    <link rel="stylesheet" href="../../../resources/script/plugins/select/select2.min.css"/>
+    <link rel="stylesheet" href="../../../resources/content/sysmgr/site.css"/>
+</head>
+<body>
+<header class="clearfix padding-left-20 padding-right-20">
+    <h2 class="logo pull-left">中直采跨境供应链电子商务后台</h2>
+
+    <div class="user-info pull-right"><i></i><span>欢迎你，hanjing</span><span>商务部  - 运营人员</span><a>退出</a></div>
+</header>
+<nav>
+    <h1 class="logo"><a href="">中直采zhongzhicai</a></h1>
+    <ul class="slide-nav">
+        <li>
+            <a href="javascript:void(0)">意向单管理</a>
+        </li>
+        <li class="ar">
+            <a href="javascript:void(0)">会员管理</a>
+            <ul>
+                <li class="active"><a href="">采购商管理</a></li>
+                <li><a href="">供应商管理</a></li>
+            </ul>
+        </li>
+        <li class="ar">
+            <a href="javascript:void(0)">商品库管理</a>
+            <ul>
+                <li class="active"><a href="">品类管理</a></li>
+                <li><a href="">商品维护</a></li>
+            </ul>
+        </li>
+        <li class="ar">
+            <a href="javascript:void(0)">账号管理</a>
+            <ul>
+                <li class="active"><a href="">修改密码</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+<!-- 主体切换的内容 -->
+<div class="container-fluid main-content padding-bottom-30">
+    <h2 class="title"><a class="first">商品库管理</a><a>>品类管理</a></h2>
+
+    <div class="container-fluid padding-left-20 padding-right-20 margin-top-20">
+        <div class="container-fluid main-info type-manage">
+            <h3 class="head"><a>新增品类</a></h3>
+            <div class="tree-preview padding-right-20">
+                <div class="tree"></div>
+                <div class="row">
+                    <div class="type-manage-head padding-bottom-10 padding-left-10 padding-right-10 padding-top-10 clearfix">
+                        <label class="pull-left margin-right-30" for="">品类ID：24123412341</label>
+                        <label class="pull-left" for="">品类名称：</label>
+
+                        <div class="form-group form-block pull-left">
+                            <input type="text" placeholder="" class="form-control pull-left margin-right-30"/>
+                        </div>
+                        <label class="sr-only pull-left margin-left-30" for="">状态：</label>
+
+                        <div class="form-group form-block pull-left">
+                            <select class="select" name="" id="selectTest">
+                                <option value="">请选择</option>
+                                <option value="">石家庄</option>
+                                <option value="">唐山</option>
+                            </select>
+                        </div>
+                    </div>
+                    <h3 class="head"><a>品类属性</a></h3>
+                    <table class="table table-bordered margin-right-10">
+                        <thead>
+                        <tr>
+                            <th>编号</th>
+                            <th>属性名称</th>
+                            <th>属性参数</th>
+                            <th>是否允许自定义</th>
+                            <th>是否必填</th>
+                            <th>是否多选</th>
+                            <th>是否参与品类检索</th>
+                            <th>排序</th>
+                            <th>类别初始显示数量</th>
+                            <th>类别最多显示数量</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th>11111</th>
+                            <td>
+                                <input type="text" placeholder="" class="form-control"/>
+                            </td>
+                            <td>
+                                <input type="text" placeholder="" class="form-control"/>
+                            </td>
+                            <td>
+                                <div class="form-group radio">
+                                    <label for="male" class=""> <!--class里加上checked为默认选中状态-->
+                                        <input type="radio" id="male" name="sex" checked><i></i><span>是</span>
+                                    </label>
+                                    <label for="female">
+                                        <input type="radio" id="female" name="sex"><i></i><span>否</span>
+                                    </label>
+                                </div>
+                                <div class="pull-left">
+                                    <div class="form-group pull-left margin-right-10 checkbox">
+                                        <label for="male" class=""> <!--class里加上checked为默认选中状态-->
+                                            <input type="radio" id="" name="" checked><i></i>
+                                        </label>
+                                    </div>
+                                    <div class="form-group pull-left">
+                                        <input type="text" placeholder="" class="form-control"/>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="form-group radio">
+                                    <label for="male" class="">
+                                        <input type="radio" id="male" name="sex" checked><i></i><span>是</span>
+                                    </label>
+                                    <label for="female">
+                                        <input type="radio" id="female" name="sex"><i></i><span>否</span>
+                                    </label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="form-group radio">
+                                    <label for="male" class="">
+                                        <input type="radio" id="male" name="sex" checked><i></i><span>是</span>
+                                    </label>
+                                    <label for="female">
+                                        <input type="radio" id="female" name="sex"><i></i><span>否</span>
+                                    </label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="form-group radio">
+                                    <label for="male" class="">
+                                        <input type="radio" id="male" name="sex" checked><i></i><span>是</span>
+                                    </label>
+                                    <label for="female">
+                                        <input type="radio" id="female" name="sex"><i></i><span>否</span>
+                                    </label>
+                                </div>
+                            </td>
+                            <td>1</td>
+                            <td>
+                                <input type="text" placeholder="5" class="form-control"/>
+                            </td>
+                            <td>
+                                <input type="text" placeholder="10" class="form-control"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>11111</th>
+                            <td>
+                                <input type="text" placeholder="" class="form-control"/>
+                            </td>
+                            <td>
+                                <input type="text" placeholder="" class="form-control"/>
+                            </td>
+                            <td>
+                                <div class="form-group radio">
+                                    <label for="male" class=""> <!--class里加上checked为默认选中状态-->
+                                        <input type="radio" id="male" name="sex" checked><i></i><span>是</span>
+                                    </label>
+                                    <label for="female">
+                                        <input type="radio" id="female" name="sex"><i></i><span>否</span>
+                                    </label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="form-group radio">
+                                    <label for="male" class="">
+                                        <input type="radio" id="male" name="sex" checked><i></i><span>是</span>
+                                    </label>
+                                    <label for="female">
+                                        <input type="radio" id="female" name="sex"><i></i><span>否</span>
+                                    </label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="form-group radio">
+                                    <label for="male" class="">
+                                        <input type="radio" id="male" name="sex" checked><i></i><span>是</span>
+                                    </label>
+                                    <label for="female">
+                                        <input type="radio" id="female" name="sex"><i></i><span>否</span>
+                                    </label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="form-group radio">
+                                    <label for="male" class="">
+                                        <input type="radio" id="male" name="sex" checked><i></i><span>是</span>
+                                    </label>
+                                    <label for="female">
+                                        <input type="radio" id="female" name="sex"><i></i><span>否</span>
+                                    </label>
+                                </div>
+                            </td>
+                            <td>1</td>
+                            <td>
+                                <input type="text" placeholder="5" class="form-control"/>
+                            </td>
+                            <td>
+                                <input type="text" placeholder="10" class="form-control"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>11111</th>
+                            <td>
+                                <input type="text" placeholder="" class="form-control"/>
+                            </td>
+                            <td>
+                                <input type="text" placeholder="" class="form-control"/>
+                            </td>
+                            <td>
+                                <div class="form-group radio">
+                                    <label for="male" class=""> <!--class里加上checked为默认选中状态-->
+                                        <input type="radio" id="male" name="sex" checked><i></i><span>是</span>
+                                    </label>
+                                    <label for="female">
+                                        <input type="radio" id="female" name="sex"><i></i><span>否</span>
+                                    </label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="form-group radio">
+                                    <label for="male" class="">
+                                        <input type="radio" id="male" name="sex" checked><i></i><span>是</span>
+                                    </label>
+                                    <label for="female">
+                                        <input type="radio" id="female" name="sex"><i></i><span>否</span>
+                                    </label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="form-group radio">
+                                    <label for="male" class="">
+                                        <input type="radio" id="male" name="sex" checked><i></i><span>是</span>
+                                    </label>
+                                    <label for="female">
+                                        <input type="radio" id="female" name="sex"><i></i><span>否</span>
+                                    </label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="form-group radio">
+                                    <label for="male" class="">
+                                        <input type="radio" id="male" name="sex" checked><i></i><span>是</span>
+                                    </label>
+                                    <label for="female">
+                                        <input type="radio" id="female" name="sex"><i></i><span>否</span>
+                                    </label>
+                                </div>
+                            </td>
+                            <td>1</td>
+                            <td>
+                                <input type="text" placeholder="5" class="form-control"/>
+                            </td>
+                            <td>
+                                <input type="text" placeholder="10" class="form-control"/>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <div class="container">
+                        <form action="" class="form-horizontal"  role="form">
+                            <fieldset>
+                                <div class="form-group">
+                                    <div class="input-group date form_date col-md-5" data-date="" data-date-format="dd MM yyyy" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+                                        <input class="form-control" size="16" type="text" value="" readonly>
+                                        <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
+                                        <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+                                    </div>
+                                    <input type="hidden" id="dtp_input2" value="" /><br/>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                    <div class="text-right margin-bottom-30 margin-top-10">
+                        <a href="" class="btn btn-info">添加</a>
+                    </div>
+                    <div class="text-center margin-bottom-30 margin-top-30">
+                        <a href="" class="btn btn-info">保存</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<script src="../../../resources/script/jquery-1.11.0.min.js"></script>
+<script src="../../../resources/script/plugins/select/select2.min.js"></script>
+<script src="../../../resources/script/plugins/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="../../../resources/script/models/utils.js"></script>
+<script type="text/javascript">
+    $('.form_date').datetimepicker({
+        language:  'fr',
+        weekStart: 1,
+        todayBtn:  1,
+        autoclose: 1,
+        todayHighlight: 1,
+        startView: 2,
+        minView: 2,
+        forceParse: 0
+    });
+</script>
+<script>
+    $(document).ready(function () {
+        // carousel
+        $('.select').select2();
+        $(".select").select2({
+            minimumResultsForSearch: -1
+        });//去掉输入框
+        scrollTop({
+            name: '.back-top',
+            time: 500,
+            windowScroll: true
+        })
+        // select2
+
+        // alert
+        $('.btn-success.timer').click(function (e) {
+            e.preventDefault();
+            zcal({
+                type: 'success',
+                title: '成功信息',
+                text: '成功信息'
+            });
+        });
+    })
+    ;
+    $(document).on("click", ".alert-sure", function () {
+
+    });
+</script>
+</body>
+</html>

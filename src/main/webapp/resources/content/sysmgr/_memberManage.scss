@@ -1,0 +1,45 @@
+.intent {
+  .red {
+    color: #ea1b42;
+  }
+  span {
+    line-height: 30px;
+    font-size: 14px;
+    display: block;
+    i {
+      padding: 0 10px;
+    }
+  }
+  table {
+    span {
+      display: inline-block;
+      text-indent: 10px;
+    }
+    img {
+      width: 90px;
+      height: 90px;
+      display: inline-block;
+    }
+  }
+  .appoint-box {
+    width: 400px;
+    overflow: hidden;
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    margin-left: -200px;
+    background-color: #ffffff;
+    border: 1px solid #dfdfdf;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    .option {
+      color: #eaeaea;
+    }
+  }
+}
+.ui-autocomplete {
+  z-index: 1001!important;
+}
+
+.cursor{
+  cursor:pointer;
+}

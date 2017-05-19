@@ -1,0 +1,6 @@
+$animal-list: left, center, right;
+@each $animal in $animal-list {
+  .text-#{$animal} {
+    text-align: $animal;
+  }
+}

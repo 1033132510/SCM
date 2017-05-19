@@ -1,0 +1,73 @@
+@keyframes modal-opening {
+  from {
+	transform: scale(1.05);
+	opacity: 0;
+  }
+  to {
+	transform: none;
+	opacity: 1;
+  }
+}
+
+@keyframes modal-closing {
+  from {
+	transform: scale(1);
+	opacity: 1;
+  }
+  to {
+	transform: scale(0.95);
+	opacity: 0;
+  }
+}
+
+.modal {
+  display: none;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: rgba(43, 46, 56, .9);
+  background: #000\9;
+  .table, .tree {
+	width: 100%;
+  }
+  .modal-content {
+	@include size(700px, auto);
+	left: 50%;
+	margin: 0 0 0 -350px;
+	top: 20%;
+	background-color: #fff;
+	padding: 20px;
+	position: absolute;
+	.tree-preview {
+	  min-height: 350px;
+	  overflow: hidden;
+	}
+  }
+  .modal-close-btn {
+	@include square(35px);
+	@include transition(color .2s);
+	position: absolute;
+	right: 0;
+	top: 0;
+	text-align: center;
+	line-height: 35px;
+	color: #95979c;
+	&:hover {
+	  color: #2b2e38;
+	}
+  }
+  &.modal-open {
+	.modal-content {
+	  @include animation(modal-opening .3s);
+	}
+  }
+  &.modal-close {
+	.modal-content {
+	  @include animation(modal-closing .3s);
+	}
+  }
+}

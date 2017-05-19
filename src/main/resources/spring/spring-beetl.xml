@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans 
+		http://www.springframework.org/schema/beans/spring-beans.xsd"
+	default-lazy-init="false">
+
+	<!-- spring beetl 配置 -->
+	<bean id="beetlConfig" class="org.beetl.ext.spring.BeetlGroupUtilConfiguration"
+		init-method="init">
+		<property name="configFileResource" value="classpath:beetl/beetl.properties" />
+		<property name="functions">
+			<map>
+				<entry key="getAllArea" value-ref="areaFunction" />
+			</map>
+		</property>
+		<property name="functionPackages">
+			<map>
+				<entry key="dict" value-ref="dictFunction" />
+				<entry key="office" value-ref="officeFunctions" />
+				<entry key="role" value-ref="roleFunctions" />
+				<entry key="auth" value-ref="authUserFunctions" />
+				<entry key="strutil" value-ref="strutilFunction" />
+			</map>
+		</property>
+	</bean>
+
+	<bean id="viewResolver" class="org.beetl.ext.spring.BeetlSpringViewResolver">
+		<property name="suffix" value=".html" />
+		<property name="contentType" value="text/html;charset=UTF-8" />
+	</bean>
+
+</beans>

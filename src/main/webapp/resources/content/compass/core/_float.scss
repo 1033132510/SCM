@@ -1,0 +1,23 @@
+// float
+// --------------------------------------------------
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+.clearfix {
+  @include clearfix;
+}
+
+.clear {
+  @include size(100%, 0);
+  clear: both;
+  overflow: hidden;
+}
+.clearboth{
+  clear: both;
+}

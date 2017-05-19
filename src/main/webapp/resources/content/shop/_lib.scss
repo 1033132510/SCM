@@ -1,0 +1,245 @@
+body { width: 100%; min-height: 100%; background-color: #f5f5f5; margin: 0 !important;
+  font: 12px/150% 'Microsoft YaHei', Helvetica Neue, Helvetica, STHeitiSC-Light, sans-serif;
+  button, input, select, textarea { font: 12px/150% 'Microsoft YaHei', Helvetica Neue, Helvetica, STHeitiSC-Light, sans-serif; }
+  html.mac & { font: 12px/150% Arial, Verdana;
+	button, input, select, textarea { font: 12px/150% Arial, Verdana; }
+  }
+}
+
+img, a {
+  &::selection { border: 0; outline: 0; background: 0; }
+}
+
+$assets-images-url: url('../images/shop/icons.png ');
+// shortcut style start------------------------------------------------
+.shortcut { height: 30px; line-height: 30px; background-color: #f1f1f1;
+  li { float: left; height: 30px; padding: 0 4px;
+	a { color: #4a4a4a; padding: 0 8px; font-size: 12px;
+	  &:hover { color: $green-dark; }
+	}
+	span { color: $green-dark; padding: 0 8px 0 24px; font-size: 16px; }
+  }
+}
+
+// shortcut style end--------------------------------------------------
+
+// header style start--------------------------------------------------
+.header { background-color: $white; padding: 20px 0;
+  .logo {
+	a { @include size(254px, 62px); @include text-hide; @include bg-default(no-repeat, left, center);
+	  display: block; background-image: url("../images/shop/logo.png");
+	  body.personal-center & { background-image: url("../images/shop/logo1.png"); margin-left: 12px; }
+	}
+	span { font-size: 20px; color: $color-main; padding-left: 38px; margin-top: 20px; float: left; position: relative;
+	  body.personal-center & { margin-left: -78px; }
+	  &:before { content: ''; @include size(14px, 3px); background-color: $color-main; position: absolute;
+		top: 50%; margin-top: -1.5px; left: 14px;
+	  }
+	}
+  }
+  .search { @include size(561px, auto); margin-left: 62px; float: left; position: relative;
+	ul { position: absolute; top: 2px; left: 0px; @include size(92px, 36px);
+	  border-left: 2px solid $green-light; background-color: #f5f5f5; overflow: hidden;
+	  li { @include size(100%, 36px); text-align: center; line-height: 36px; border-right: 1px solid $color-border;
+		&.dn { border-right: 1px solid $green-light; border-bottom: 1px solid $green-light; }
+		a { display: block; padding-right: 5px; cursor: pointer; color: $color-main;
+		  &:hover { color: $green-light; }
+		}
+	  }
+	  &:after { position: absolute; content: ''; @include bg-image(7px, 4px, -50px, -4px); right: 23px; top: 16px; }
+	  &:active { outline: 0; background-image: none; @include box-shadow(inset 0 3px 5px rgba(0, 0, 0, .125)); }
+	  &.on { height: 72px;
+		&:after { background-position: -50px 0px; }
+	  }
+	}
+	input { @include size(451px, 40px); border: 2px solid $green-light; background-color: #f9f9f9;
+	  padding: 4px 4px 4px 100px; line-height: 28px; font-size: 12px; color: $color-main; border-right: none;
+	}
+	button { @include size(110px, 40px); text-align: center; line-height: 40px; background-color: $green-light;
+	  font-size: 16px; color: $white; cursor: pointer;
+	  &:active { outline: 0; background-image: none; @include box-shadow(inset 0 3px 5px rgba(0, 0, 0, .125)); }
+	}
+	.hotwords { margin: 5px 0 0 0;
+	  a { color: #2c2c2c; margin: 0 14px 0 0; cursor: pointer;
+		&:hover, &.style-green { color: $green-dark; }
+	  }
+	}
+	body.personal-center & { width: 360px; float: right; margin: 15px 11px 0 0;
+	  ul { display: none; }
+	  input { @include size(252px, 30px); line-height: 18px; padding: 4px 4px 4px 10px; }
+	  button { @include size(108px, 30px); line-height: 30px; }
+	}
+  }
+  .shop-cart { @include size(154px, 40px); position: relative; background-color: #f9f9f9;
+	border: 1px solid $color-border; text-align: left; font-size: 16px; margin-left: 40px;
+	a { @include square(100%); display: block; color: $red-dark; line-height: 40px; padding-left: 42px;
+	  &:active { outline: 0; background-image: none; @include box-shadow(inset 0 3px 5px rgba(0, 0, 0, .125));
+	  }
+	}
+	span { position: absolute; color: $red-dark; line-height: 40px; top: 0; bottom: 0;
+	  &.shop-count { left: 98px; }
+	  &.shop-ico { @include bg-image(18px, 17px, 0, 0); top: 50%; left: 20px; margin-top: -8px; }
+	}
+  }
+}
+
+// header style end----------------------------------------------------
+
+// nav style start-----------------------------------------------------
+.nav { background-color: #f9f9f9; @include size(100%, 50px); border-bottom: 2px solid $green-dark;
+  .nav-items { height: 100%; margin-left: 340px;
+	li { float: left; font-size: 16px; margin-right: 44px;
+	  a { color: $color-main; display: block; line-height: 50px;
+		&:hover { color: $green-light; }
+	  }
+	}
+  }
+  body.personal-center &, &.line { height: 2px; overflow: hidden; }
+}
+
+// nav style end-------------------------------------------------------
+
+// categorys style start-----------------------------------------------
+.categorys { position: relative; z-index: 999; width: 270px; margin-top: -50px; float: left;
+  .level-nav { @include size(100%, 50px); background-color: $green-light;
+	a { @include square(100%); text-align: center; line-height: 50px;
+	  font-size: 16px; color: $white; display: block; cursor: pointer;
+	  i { color: #b4d6c4; font-size: 12px; margin-left: 10px; display: inline-block; height: 100%; cursor: pointer; }
+	}
+  }
+  .level-content { @include size(100%, auto);
+	.level { display: none; background-color: #f8f8f8; border: 1px solid $green-light; position: relative; border-top: none;
+	  &.on { display: block; }
+	}
+	.level1 { height: 300px;
+	  li { height: 75px;
+		> h3 { display: block; @include square(100%); font-weight: normal; font-size: 16px;
+		  padding: 0 15px; @include clearfix; line-height: 75px; position: relative;
+		  a { cursor: pointer; color: $color-main; }
+		  &:before { content: '>'; position: absolute; right: 15px; top: 50%; @include size(10px, 20px);
+			line-height: 20px; margin-top: -10px; font: 400 16px/20px consolas; @include transition(.4s right ease);
+		  }
+		  &:after { content: ''; position: absolute; top: 0; width: 2px; bottom: 0; right: -2px; z-index: 10;
+			background-color: $white; display: none;
+		  }
+		}
+		.level-inner { position: absolute; @include size(931px, auto); min-height: 300px; background-color: $white;
+		  top: 0; left: 268px; border: 2px solid $green-light; border-top: none; padding: 0 20px; display: none;
+		  &:after { position: absolute; top: -1px; left: 0; right: 0;
+			width: 100%; height: 1px; background-color: $green-dark; content: ''; z-index: 999;
+		  }
+		  &:before { content: ''; position: absolute; @include size(30px, 300px);
+			left: -30px; top: 0; background-color: transparent; z-index: 20;
+		  }
+		  .level-details { font-size: 12px; @include clearfix; border-top: 1px dashed $color-border; margin-top: -1px;
+			a { color: $color-main; margin: 10px 22px 10px 0; display: inline-block; cursor: pointer;
+			  &:hover { color: $green-dark; }
+			}
+			dt { float: left; width: 88px; padding: 12px 0; color: $gray;
+			  a { color: $gray; margin-right: 0;
+				&:hover { color: $gray; }
+			  }
+			}
+			dd { float: left; width: 790px; padding: 12px 0; }
+		  }
+		}
+		&:hover {
+		  > h3 { border-bottom: 2px solid $green-light; border-top: 2px solid $green-light; line-height: 71px; background-color: $white;
+			a { color: $green-light; }
+			&:before { color: $green-light; right: 8px; }
+			&:after { display: block; }
+		  }
+		  &:first-child {
+			> h3 { border-top-color: #fff;
+			  &:after { top: -2px; }
+			}
+		  }
+		  .level-inner { display: block; }
+		}
+	  }
+	}
+	.level2 { padding: 0 14px;
+	  .classify-content { border-bottom: 1px solid $color-border; padding: 18px 0 6px 0;
+		@include clearfix;
+		h2 { margin-bottom: 4px; font-size: 16px; font-weight: 400; color: $black; }
+		a { float: left; margin: 13px 0; @include size(50%, auto); padding-left: 2px; color: $color-main; cursor: pointer;
+		  &:hover { color: $green-light; }
+		}
+	  }
+	}
+  }
+  .nav-light { color: $green-light !important; }
+}
+
+// categorys style start-----------------------------------------------
+
+// main-content style start--------------------------------------------
+.main-content { @include size(1268px, auto); @include center-block; @include clearfix; padding: 0 34px 70px; background-color: $white; min-height: 900px; }
+
+// main-content style end----------------------------------------------
+
+// footer style start--------------------------------------------------
+.footer { @include size(100%, auto); background-color: $color-main; color: #7e868c; font-size: 14px; text-align: center; padding: 26px 0;
+  p { line-height: 24px; }
+}
+
+// footer style end----------------------------------------------------
+
+// bread style start---------------------------------------------------
+.bread { padding: 20px 0 10px 0;
+  a, button { color: $color-main; 
+	&:hover { color: $green-light; }
+  }
+}
+
+// bread style end-----------------------------------------------------
+
+// tab-container style start---------------------------------------------------
+.tab-container { border: 1px solid $color-border; margin: 30px 0 -70px 0; padding-bottom: 34px;
+  .tab-nav { background-color: #f9f9f9; height: 50px; line-height: 50px; margin-bottom: 20px; @include clearfix;
+	a { float: left; @include size(134px, 50px); text-align: center; color: $color-main;
+	  font-size: 16px; position: relative; cursor: pointer;
+	  &:before { position: absolute; top: -1px; height: 2px; left: 0; right: 0; content: '';
+		background-color: $green-light; display: none;
+	  }
+	  &:after { position: absolute; top: 0; content: '';
+		@include border-arrow-btm(4px, 4px, $green-light); left: 50%; margin-left: -4px; display: none;
+	  }
+	  &.on { color: $green-light; background-color: $white;
+		&:before, &:after { display: block; }
+	  }
+	}
+  }
+  .tab-content { padding: 0 28px; font-size: 100%;
+	em, i { font-style: italic; }
+	b, strong { font-weight: bold; }
+	.tab { display: none; overflow: hidden;
+	  &.on { display: block; }
+	}
+	img { max-width: 100%; }
+  }
+  &.fixed { padding-top: 70px;
+	.tab-nav { position: fixed; width: 1198px; left: 50%; margin-left: -599px; top: 0; }
+  }
+}
+
+// tab-container style end-----------------------------------------------------
+
+.back-top { position: fixed; bottom: 100px; right: 50%; margin-right: -675px; @include text-hide; @include square(40px);
+  display: block; @include bg-default; background-image: url("../images/shop/back-top.png");
+}
+
+// buttons
+.btn { font-size: 1.6em; display: inline-block; border-radius: 0; text-align: center; cursor: pointer; background-image: none; padding: .5em 3.1em;
+  border: 1px solid transparent; white-space: nowrap; font-weight: normal;
+}
+
+.btn-info { color: #fff; background-color: #1daa62; border-color: #1daa62;
+  &:hover { color: #fff; background-color: #167e49; border-color: #147644; }
+  &:focus { color: #fff; background-color: #167e49; border-color: #0a3d23; }
+}
+
+.btn-danger { color: #fff; background-color: #e50000; border-color: #e50000;
+  &:hover { color: #fff; background-color: #b20000; border-color: #a80000; }
+}
+

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="renderer" content="webkit"/>
+    <meta content="IE=Edge,chrome=1" http-equiv="X-UA-Compatible"/>
+    <meta name="description" content=""/>
+    <meta name="author" content="zhanjun"/>
+    <title>直彩科技有限公司</title>
+    <link rel="stylesheet"
+          href="../../../resources/script/plugins/mCustomScrollbar/jquery.mCustomScrollbar.css"/>
+    <link rel="stylesheet" href="../../../resources/script/plugins/select/select2.min.css"/>
+    <link rel="stylesheet" href="../../../resources/content/sysmgr/site.css"/>
+</head>
+<body>
+<header class="clearfix padding-left-20 padding-right-20">
+    <h2 class="logo pull-left">中直采跨境供应链电子商务后台</h2>
+
+    <div class="user-info pull-right"><i></i><span>欢迎你，hanjing</span><span>商务部  - 运营人员</span><a>退出</a></div>
+</header>
+<nav>
+    <h1 class="logo"><a href="">中直采zhongzhicai</a></h1>
+    <ul class="slide-nav">
+        <li>
+            <a href="javascript:void(0)">意向单管理</a>
+        </li>
+        <li class="ar">
+            <a href="javascript:void(0)">会员管理</a>
+            <ul>
+                <li class="active"><a href="">采购商管理</a></li>
+                <li><a href="">供应商管理</a></li>
+            </ul>
+        </li>
+        <li class="ar">
+            <a href="javascript:void(0)">商品库管理</a>
+            <ul>
+                <li class="active"><a href="">品类管理</a></li>
+                <li><a href="">商品维护</a></li>
+            </ul>
+        </li>
+        <li class="ar">
+            <a href="javascript:void(0)">账号管理</a>
+            <ul>
+                <li class="active"><a href="">修改密码</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+<!-- 主体切换的内容 -->
+<div class="container-fluid main-content padding-bottom-30">
+    <h2 class="title"><a class="first">商品库管理</a><a>>商品维护</a></h2>
+
+    <div class="container-fluid padding-left-20 padding-right-20 margin-top-20">
+        <div class="container-fluid main-info ">
+            <div class="search padding-top-10 padding-bottom-10 padding-left-10 padding-right-10 clearfix">
+                <div class="form-group form-block pull-left margin-right-10">
+                    <select class="select" name="" id="selectTest">
+                        <option value="">请选择</option>
+                        <option value="">有效</option>
+                        <option value="">失效</option>
+                    </select>
+                </div>
+
+                <div class="form-group pull-left">
+                    <input type="text" placeholder="输入商品名称" class="form-control pull-left margin-right-10"/>
+                    <a href="" class="btn btn-info btn-xs pull-left">检索</a>
+                </div>
+
+                <div class="margin-left-20 pull-left">
+                    <a href="" class="btn btn-info btn-xs">批量审批</a>
+                </div>
+                <div class="margin-left-20 pull-right">
+                    <a href="" class="btn btn-warning btn-xs">添加商品</a>
+                </div>
+            </div>
+            <div class="border-bg"></div>
+            <table class="table pinlei">
+                <thead>
+                <tr>
+                    <th>编号</th>
+                    <th>商品ID</th>
+                    <th>商品名称</th>
+                    <th>品牌</th>
+                    <th>所属品类</th>
+                    <th>状态</th>
+                    <th>操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th>
+                        <div class="form-group checkbox">
+                            <label>
+                                <input type="checkbox" class="margin-right-5 checked"><i></i><span>1</span>
+                            </label>
+                        </div>
+                    </th>
+                    <td>1111111111</td>
+                    <td>特普丽 无纺纸</td>
+                    <td>特普丽</td>
+                    <td>墙纸</td>
+                    <td>审批通过</td>
+                    <td><a href="" class="red">修改</a></td>
+                </tr>
+                <tr>
+                    <th>
+                        <div class="form-group checkbox">
+                            <label>
+                                <input type="checkbox" class="margin-right-5 checked"><i></i><span>1</span>
+                            </label>
+                        </div>
+                    </th>
+                    <td>1111111111</td>
+                    <td>特普丽 无纺纸</td>
+                    <td>特普丽</td>
+                    <td>墙纸</td>
+                    <td>审批中</td>
+                    <td><a href="" class="red">修改</a></td>
+                </tr>
+                <tr>
+                    <th>
+                        <div class="form-group checkbox">
+                            <label>
+                                <input type="checkbox" class="margin-right-5 checked"><i></i><span>1</span>
+                            </label>
+                        </div>
+                    </th>
+                    <td>1111111111</td>
+                    <td>特普丽 无纺纸</td>
+                    <td>特普丽</td>
+                    <td>墙纸</td>
+                    <td>待审批</td>
+                    <td><a href="" class="red">修改</a></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="pagination text-center margin-top-20 margin-bottom-20">
+            <ul>
+                <li><span>共4页</span></li>
+                <li><a href="">首页</a></li>
+                <li class="prev disabled"><a href="">上一页</a></li>
+                <li class="active"><a href="">1</a></li>
+                <li><a href="">2</a></li>
+                <li><a href="">3</a></li>
+                <li><a href="">4</a></li>
+                <li><a href="">下一页</a></li>
+                <li class="next"><a href="">尾页</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<script src="../../../resources/script/jquery-1.11.0.min.js"></script>
+<script src="../../../resources/script/base.js"></script>
+<script src="../../../resources/script/plugins/select/select2.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        // carousel
+        $('.select').select2();
+
+        scrollTop({
+            name: '.back-top',
+            time: 500,
+            windowScroll: true
+        })
+        // select2
+
+        // alert
+        $('.btn-success.timer').click(function (e) {
+            e.preventDefault();
+            zcal({
+                type: 'success',
+                title: '成功信息',
+                text: '成功信息'
+            });
+        });
+    })
+    ;
+    $(document).on("click", ".alert-sure", function () {
+
+    });
+</script>
+</body>
+</html>

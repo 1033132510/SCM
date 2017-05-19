@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="renderer" content="webkit"/>
+    <meta content="IE=Edge,chrome=1" http-equiv="X-UA-Compatible"/>
+    <meta name="description" content=""/>
+    <meta name="author" content="zhanjun"/>
+    <title>直采科技有限公司</title>
+    <link rel="stylesheet"
+          href="../../../resources/script/plugins/mCustomScrollbar/jquery.mCustomScrollbar.css"/>
+    <link rel="stylesheet" href="../../../resources/script/plugins/select/select2.min.css"/>
+    <link rel="stylesheet" href="../../../resources/content/sysmgr/site.css"/>
+</head>
+<body>
+<header class="clearfix padding-left-20 padding-right-20">
+    <h2 class="logo pull-left">中直采跨境供应链电子商务后台</h2>
+
+    <div class="user-info pull-right"><i></i><span>欢迎你，hanjing</span><span>商务部  - 运营人员</span><a>退出</a></div>
+</header>
+<nav>
+    <h1 class="logo"><a href="">中直采zhongzhicai</a></h1>
+    <ul class="slide-nav">
+        <li>
+            <a href="javascript:void(0)">意向单管理</a>
+        </li>
+        <li class="ar">
+            <a href="javascript:void(0)">会员管理</a>
+            <ul>
+                <li class="active"><a href="">采购商管理</a></li>
+                <li><a href="">供应商管理</a></li>
+            </ul>
+        </li>
+        <li class="ar">
+            <a href="javascript:void(0)">商品库管理</a>
+            <ul>
+                <li class="active"><a href="">品类管理</a></li>
+                <li><a href="">商品维护</a></li>
+            </ul>
+        </li>
+        <li class="ar">
+            <a href="javascript:void(0)">账号管理</a>
+            <ul>
+                <li class="active"><a href="">修改密码</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+<!-- 主体切换的内容 -->
+<div class="container-fluid main-content padding-bottom-30">
+    <h2 class="title"><a class="first">商品库管理</a><a>>商品维护</a><a>>特殊商品价格维护</a></h2>
+
+    <div class="container-fluid padding-left-20 padding-right-20 margin-top-20">
+        <div class="container-fluid main-info type-manage">
+            <h3 class="head"><a>商品信息</a></h3>
+
+            <div class="type-manage-head padding-bottom-10 padding-left-10 padding-right-10 padding-top-10 clearfix">
+                <label class="pull-left margin-right-30" for="">品类ID：24123412341</label>
+                <label class="pull-left" for="">商品名称：</label>
+                <label class="pull-left margin-right-30" for="">SD卡激发了科技发达商品</label>
+                <label class="pull-left" for="">所属品牌：</label>
+                <label class="pull-left margin-right-30" for="">SD卡激发了科技发达商品</label>
+                <label class="pull-left" for=""><a class="blue" href="tianjiashangpin.html">查看商品详情</a></label>
+            </div>
+            <div class="border-bg"></div>
+            <h3 class="head"><a>价格信息：</a></h3>
+            <table class="table pinlei form-inline">
+                <thead>
+                <tr>
+                    <th>修改次数</th>
+                    <th>标价</th>
+                    <th>成本价</th>
+                    <th>一级客户报价</th>
+                    <th>二级客户报价</th>
+                    <th>三级客户报价</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th>1</th>
+                    <td>120</td>
+                    <td>80</td>
+                    <td>97</td>
+                    <td>98</td>
+                    <td>99</td>
+                </tr>
+                <tr>
+                    <th>2</th>
+                    <td>120</td>
+                    <td>80</td>
+                    <td>97</td>
+                    <td>98</td>
+                    <td>99</td>
+                </tr>
+                <tr>
+                    <th>3</th>
+                    <td>120</td>
+                    <td>80</td>
+                    <td>97</td>
+                    <td>
+                        <input type="text" placeholder="" class="form-control"/>
+                    </td>
+                    <td>
+                        <input type="text" placeholder="" class="form-control"/>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="text-right margin-bottom-30 margin-top-10">
+            <a href="" class="btn btn-info">确认保存</a>
+        </div>
+    </div>
+</div>
+<script src="../../../resources/script/jquery-1.11.0.min.js"></script>
+<script src="../../../resources/script/utils.js"></script>
+<script src="../../../resources/script/plugins/select/select2.min.js"></script>
+<script>
+    $(document).ready(function () {
+        // carousel
+        $('.select').select2();
+        $(".select").select2({
+            minimumResultsForSearch: -1
+        });//去掉输入框
+        scrollTop({
+            name: '.back-top',
+            time: 500,
+            windowScroll: true
+        })
+        // select2
+
+        // alert
+        $('.btn-success.timer').click(function (e) {
+            e.preventDefault();
+            zcal({
+                type: 'success',
+                title: '成功信息',
+                text: '成功信息'
+            });
+        });
+    })
+    ;
+    $(document).on("click", ".alert-sure", function () {
+
+    });
+</script>
+</body>
+</html>

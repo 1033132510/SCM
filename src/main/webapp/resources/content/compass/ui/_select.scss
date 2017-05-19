@@ -1,0 +1,69 @@
+// select style start-----------------------------------------
+.form-select {
+  padding-left: 50px;
+  &.short {
+	width: 110px;
+  }
+  label {
+	left: 0;
+  }
+}
+
+.select-group {
+  text-align: center;
+  .form-select {
+	width: 200px !important;
+	margin-right: 25px;
+	@media screen and(max-width: 1370px) {
+	  margin-right: 10px;
+	  width: 180px !important;
+	}
+  }
+}
+
+.select2-container--default .select2-selection--single {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  height: 30px;
+  background: #F9F9F9;
+  border: 1px solid #DFDFDF;
+  width: auto !important;
+  font-size: 14px;
+  &:focus {
+	outline: none;
+  }
+}
+
+.select2-search--dropdown {
+  padding: 0;
+}
+
+.select2-results__option--highlighted {
+  background: #1DAA62 !important;
+}
+
+.select2-results__option:nth-child(2n+2) {
+  background: #F9F9F9;
+}
+
+.select2-dropdown {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  border: 1px solid #DFDFDF;
+  font-size: 14px;
+}
+
+.user-content {
+  .select2-container--default, .select2-container {
+	width: auto !important;
+  }
+}
+.select-font-4{
+  .select2-container{
+    width: 90px !important;
+  }
+}
+
+// select style start-----------------------------------------

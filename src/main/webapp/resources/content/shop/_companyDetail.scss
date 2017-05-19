@@ -1,0 +1,28 @@
+.company-detail {
+  .company-logo { position: relative;
+	img { border: 1px solid $color-border; @include size(199px, 82px); }
+	span { position: absolute; left: 212px; top: 50%; height: 30px; line-height: 30px; margin-top: -15px;
+	  color: $color-main; font-weight: bold; font-size: 20px;
+	}
+  }
+}
+
+.model { overflow: hidden;
+  .pp-logo { @include size(200px, 84px); border: 1px solid $color-border; margin-bottom: 20px;
+	overflow: hidden; display: table; text-align: center;
+	i { display: table-cell; vertical-align: middle; @include size(200px, 84px); }
+	img { max-width: 100%; max-height: 100%; }
+  }
+  .pp-caption { float: left; height: 84px; line-height: 84px;
+	color: $color-main; font-size: 20px; padding-left: 15px;
+  }
+}
+
+.certificate { margin: 0 -10px; overflow: hidden;
+  i { float: left; margin: 0 9px 18px 9px; @include size(272px, 386px);
+	border: 1px solid $color-border; overflow: hidden; text-align: center;
+	span { display: table-cell; vertical-align: middle; @include size(270px, 384px);
+	  img { @include size(100%, auto); max-height: 100%; max-width: 100%; }
+	}
+  }
+}

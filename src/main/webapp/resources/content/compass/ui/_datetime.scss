@@ -1,0 +1,116 @@
+.table-condensed{
+  background-color: #ffffff;
+}
+.table-condensed thead > tr > th,
+.table-condensed tbody > tr > th,
+.table-condensed tfoot > tr > th,
+.table-condensed thead > tr > td,
+.table-condensed tbody > tr > td,
+.table-condensed tfoot > tr > td {
+  padding: 5px;
+}
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 160px;
+  padding: 5px 0;
+  margin: 2px 0 0;
+  font-size: 14px;
+  list-style: none;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  background-clip: padding-box;
+}
+.datetimepicker{
+  padding:4px;
+  margin-top: 1px;
+  direction:ltr;
+  -webkit-border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+  border-radius: 0 !important;
+}
+.entryDate{
+  input{
+    padding-left:80px;
+  }
+  .input-group-addon{
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    left: 0;
+    top: 0;
+  }
+}
+.form-horizontal .control-label,
+.form-horizontal .radio,
+.form-horizontal .checkbox,
+.form-horizontal .radio-inline,
+.form-horizontal .checkbox-inline {
+  padding-top: 7px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.form-horizontal .form-group {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.form-horizontal .form-group:before,
+.form-horizontal .form-group:after {
+  display: table;
+  content: " ";
+}
+
+.form-horizontal .form-group:after {
+  clear: both;
+}
+
+.form-horizontal .form-group:before,
+.form-horizontal .form-group:after {
+  display: table;
+  content: " ";
+}
+
+.form-horizontal .form-group:after {
+  clear: both;
+}
+.date-group{
+  width:200px !important;
+}
+.table-condensed{
+  thead{
+    tr{
+      .prev{
+        background: url("../images/sysmgr/datetime-picker.png") no-repeat;
+        background-position: 0 -30px;
+        background-size: 30px;
+        cursor: pointer;
+      }
+      .next{
+        background: url("../images/sysmgr/datetime-picker.png") no-repeat;
+        background-position: 0 1px;
+        background-size: 30px;
+        cursor: pointer;
+      }
+      .dow{
+        cursor: pointer;
+      }
+    }
+  }
+  tbody{
+    tr{
+      .day{
+        cursor: pointer;
+      }
+    }
+  }
+}

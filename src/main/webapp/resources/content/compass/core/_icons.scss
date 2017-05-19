@@ -1,0 +1,31 @@
+$icon-font-path: "../font/";
+$icon-font-name: "icon-font";
+
+@at-root {
+  @font-face {
+    font-family: 'icon-font';
+    src: url('#{$icon-font-path}#{$icon-font-name}.eot?cwx7wu');
+    src: url('#{$icon-font-path}#{$icon-font-name}.eot?cwx7wu#iefix') format('embedded-opentype'),
+    url('#{$icon-font-path}#{$icon-font-name}.ttf?cwx7wu') format('truetype'),
+    url('#{$icon-font-path}#{$icon-font-name}.woff?cwx7wu') format('woff'),
+    url('#{$icon-font-path}#{$icon-font-name}.svg?cwx7wu#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+}
+
+.icon-font {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'icon';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-font-video:before {
+  content: '';
+}

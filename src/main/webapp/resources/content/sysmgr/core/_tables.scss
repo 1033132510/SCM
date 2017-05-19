@@ -1,0 +1,142 @@
+// tables
+// --------------------------------------------------
+
+$table-bg: #efefef;
+$table-bg-hover: #ddd;
+$table-cell-padding: 5px 10px;
+$table-border-color: #dfdfdf;
+
+table {
+  background-color: $table-bg;
+  @include size(100%, auto);
+  text-align: center;
+  a {
+	cursor: pointer;
+  }
+}
+
+.table {
+  width: 100%;
+  max-width: 100%;
+  color: #2a2e33;
+
+  caption {
+	padding: $table-cell-padding 0;
+	text-align: left;
+  }
+  > thead,
+  > tbody,
+  > tfoot {
+	> tr {
+	  > th,
+	  > td {
+		padding: $table-cell-padding;
+		vertical-align: top;
+		border-left: 1px solid #dfdfdf;
+		vertical-align: middle !important;
+		&:first-child {
+		  border: none;
+		}
+		input {
+		  font-size: 0.8em !important;
+		}
+	  }
+	}
+  }
+  > tbody {
+	> tr {
+	  > td {
+		font-size: 14px;
+	  }
+	  &:nth-child(2n + 1) {
+		background-color: #fff;
+	  }
+	  &:nth-child(2n) {
+		background-color: #f9f9f9;
+	  }
+	}
+  }
+  > thead > tr > th {
+	vertical-align: bottom;
+	font-size: 16px;
+	font-weight: normal;
+	// border-bottom: 2px solid $table-border-color;
+  }
+  > caption + thead,
+  > colgroup + thead,
+  > thead:first-child {
+	> tr:first-child {
+	  > th,
+	  > td {
+		border-top: 0;
+	  }
+	}
+  }
+  > tbody + tbody {
+	border-top: 2px solid $table-border-color;
+  }
+  .form-group {
+	width: auto !important;
+	.form-control {
+	  width: 100%;
+	}
+	.sm-form-control {
+	  width: 70px;
+	  margin: 0 auto;
+	}
+  }
+}
+
+@media screen and (max-width: 1367px) {
+  .scroll {
+	overflow: hidden;
+	.table {
+	  width: 1367px;
+	}
+	.mCSB_horizontal {
+	  height: auto !important;
+	  > .mCSB_container {
+		margin: 0 0 0 0;
+	  }
+	}
+	.mCSB_scrollTools {
+	  height: 8px !important;
+	  .mCSB_dragger {
+		border-radius: 5px;
+		display: none;
+		background-color: rgba(134, 134, 134, 0.35);
+	  }
+	}
+	&:hover {
+	  .mCSB_scrollTools {
+		height: 8px !important;
+		.mCSB_dragger {
+		  border-radius: 5px;
+		  display: block;
+		  background-color: rgba(134, 134, 134, 0.35);
+		}
+	  }
+	}
+  }
+
+  .table-bordered {
+	margin-top: 0 !important;
+  }
+}
+
+.table-bordered {
+  border: 1px solid $table-border-color;
+  margin-top: -1px;
+}
+
+.table-bordered-bottom {
+  tr {
+	border-bottom: 1px solid $table-border-color !important;
+  }
+}
+
+.table-hover {
+  > tbody > tr:hover {
+	background-color: $table-bg-hover;
+  }
+}

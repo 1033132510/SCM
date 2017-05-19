@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.springframework.org/schema/beans"
+       xmlns:beans="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
+
+
+    <beans:import resource="classpath:spring/spring-datasource.xml"/>
+
+
+    <beans:import resource="classpath:spring/spring-jpa.xml"/>
+
+    <beans:import resource="classpath:spring/spring-service.xml"/>
+    <!-- 工作流暂时排除 -->
+    <!--<beans:import resource="classpath:spring/spring-activiti.xml"/>-->
+    <beans:import resource="classpath:spring/spring-shiro.xml"/>
+    <beans:import resource="classpath:spring/spring-sms.xml" />
+    <!--<beans:import resource="classpath:spring/spring-mail.xml" />-->
+
+</beans>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemesh>
+
+    <!-- 后台管理页面模板START -->
+    <mapping path="/sysmgr" decorator="/decorators/sysDecorator.jsp"/>
+    <mapping path="/sysmgr/*" decorator="/decorators/sysDecorator.jsp"/>
+    <mapping path="/shop/supplier/reigstList" decorator="/decorators/sysDecorator.jsp"/>
+    <mapping path="/shop/purchaser/reigstList" decorator="/decorators/sysDecorator.jsp"/>
+    <mapping path="/account/sysmgr/password" decorator="/decorators/sysDecorator.jsp"/>
+    <mapping path="/sysmgr/login" exclude="true"/>
+    <!-- 后台管理页面模板END -->
+
+
+    <!-- 电商页面模板START -->
+    <mapping path="/shop" decorator="/decorators/shopDecorator.jsp"/>
+    <mapping path="/shop/*" decorator="/decorators/shopDecorator.jsp"/>
+    <mapping path="/account/password/shop" decorator="/decorators/shopDecorator.jsp"/>
+    <mapping path="/shop/login" exclude="true"/>
+    <mapping path="/shop/login/" exclude="true"/>
+    <mapping path="/shop/purchaser/toAddPurchaser" exclude="true"/>
+    <mapping path="/shop/supplier/toAddSupplier" exclude="true"/>
+    <!-- 电商页面模板END -->
+
+    <!-- 供应商管理页面START -->
+    <mapping path="/supply/*" decorator="/decorators/supplyDecorator.jsp"/>
+    <mapping path="/account/supply/password" decorator="/decorators/supplyDecorator.jsp"/>
+    <mapping path="/supply/login" exclude="true"/>
+    <mapping path="/product/preview/*" exclude="true"/>
+    <mapping path="/product/preview" exclude="true"/>
+    <!-- 供应商管理页面END -->
+
+    <mapping path="/common/500.jsp" exclude="true"/>
+    <mapping path="/common/404.jsp" exclude="true"/>
+    <mapping path="/login" exclude="true"/>
+    <mapping path="/logout" exclude="true"/>
+    <mapping path="/register" exclude="true"/>
+
+    <!-- 自定义标签 -->
+    <content-processor>
+        <tag-rule-bundle class="com.zzc.common.sitemesh3.LeftMenuRuleBundle"/>
+    </content-processor>
+
+
+</sitemesh>

@@ -1,0 +1,19 @@
+// table
+
+.table {
+  border: 1px solid $border;
+  width: 100%;
+  text-align: center;
+  color: $text-title;
+  background-color: #fff;
+  th { border-bottom: 1px solid $border; font-size: $md; height: 40px; }
+  td { height: 40px; }
+  tbody {
+	tr:nth-child(2n) {
+	  background-color: $table;
+	}
+	tr {
+	  &:hover { background-color: $table-hover; }
+	}
+  }
+}

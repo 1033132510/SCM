@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://www.springframework.org/schema/beans" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:beans="http://www.springframework.org/schema/beans" xmlns:task="http://www.springframework.org/schema/task"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context-4.0.xsd
+http://www.springframework.org/schema/task
+    http://www.springframework.org/schema/task/spring-task-4.0.xsd">
+
+	<description>短信 配置</description>
+	<!-- 默认值如果适合，该项可以不用修改 -->
+	<context:component-scan base-package="com.**.sms" />
+	<!-- 支持异步方法执行 -->
+	<task:annotation-driven executor="smsSendExecutor" />
+
+	<!-- CALLER_RUNS：不在新线程中执行任务，而是有调用者所在的线程来执行 -->
+	<task:executor id="smsSendExecutor" pool-size="1-10"
+		queue-capacity="100" rejection-policy="DISCARD_OLDEST" />
+	<!-- 发送短信模板 -->
+	<bean id="smsService" class="com.zzc.common.sms.SmsService">
+		<property name="prefix" value="${sms.company.title}" />
+		<property name="url" value="${sms.luosimao.url}" />
+		<property name="key" value="${sms.zzc.key}" />
+		<property name="templetMap">
+			<map>
+				<entry key="createIntentionOrder" value="采购商{0}，提交了采购商意向单，项目预计需求期：{1}，请尽快派单" />
+				<entry key="toOperationEmployee" value="采购商{0}，提交了采购商意向单，项目预计需求期：{1}，此项目已派单给你，请尽快联系客户" />
+				<entry key="toPurchaserUser"
+					value="您的订单已被接单成功，请耐心等候运营人员联系您，或直接联系运营人员：{employeeName}，{employeeMobile}" />
+				<entry key="registShopSupplier" value="供应商：{0}已提交资料，联系人：{1}，{2}，请尽快联系此供应商并完善审核信息。" />
+				<entry key="registShopPurchaser" value="采购商：{0}已提交资料，联系人：{1}，{2}，请尽快联系此采购商并完善审核信息。" />
+			</map>
+		</property>
+	</bean>
+
+</beans>

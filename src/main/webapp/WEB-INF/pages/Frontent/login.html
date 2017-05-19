@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="renderer" content="webkit"/>
+    <meta content="IE=Edge,chrome=1" http-equiv="X-UA-Compatible"/>
+    <meta name="description" content=""/>
+    <meta name="author" content="zhanjun"/>
+    <title>直采科技有限公司</title>
+    <link rel="stylesheet" href="../../../../webapp/resources/script/plugins/slick/slick.css"/>
+    <link rel="stylesheet" href="../../../../webapp/resources/script/plugins/videoJs/video-js.css"/>
+    <link rel="stylesheet" href="../../../../webapp/resources/content/shop/site.css"/>
+    <script src="../../../../webapp/resources/script/jquery-1.11.0.min.js"></script>
+    <script src="../../../../webapp/resources/script/plugins/videoJs/video.js"></script>
+    <script>
+        videojs.options.flash.swf = "../../../../webapp/resources/script/plugins/videoJs/video-js.swf";
+    </script>
+    <style>
+        .vjs-control-bar, .vjs-big-play-button, .vjs-loading-spinner {
+            display: none !important;
+        }
+    </style>
+</head>
+<body>
+<div class="login">
+    <div class="video">
+        <video id="example_video_1" class="video-js vjs-default-skin" controls preload="none" width="100%"
+               poster="../../../resources/content/images/shop/login-bg1.jpg"
+               data-setup="{}">
+            <source src="../../../../webapp/resources/script/plugins/videoJs/video.mp4" type='video/mp4'/>
+        </video>
+    </div>
+    <form action="">
+        <h2>用户登录</h2>
+
+        <div class="login-group">
+            <label class="login-username" for=""><input type="text" placeholder="手机号进行登录"/></label>
+            <label class="login-password" for=""><input type="password" placeholder="请输入密码"/></label>
+        </div>
+        <div class="error-tips">
+            密码错误
+        </div>
+        <input type="submit" value="登陆" class="btn btn-info lg-btn"/>
+
+        <div class="lg-tips clearfix">
+            <a href="" class="pull-left">还不是中直采会员？立即注册</a>
+            <a href="" class="pull-right">忘记密码？ </a>
+        </div>
+    </form>
+</div>
+<script>
+    $(window).load(function () {
+        var myPlayer = videojs('example_video_1');
+        var scaleXY = 1080 / 1920;
+        var imgWidth = $(window).width();
+        var imgHeight = scaleXY * imgWidth;
+        $('#example_video_1').css({
+            'width': imgWidth,
+            'height': imgHeight
+        });
+        $('.login').addClass('on');
+        $('.lg-btn').click(function (e) {
+            e.preventDefault();
+            $('.login').addClass('off');
+            setTimeout(function () {
+                videojs("example_video_1").ready(function () {
+                    var myPlayer = this;
+                    myPlayer.play();
+                });
+            }, 400)
+        });
+    });
+</script>
+</body>
+</html>

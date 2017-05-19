@@ -1,0 +1,50 @@
+// button default
+.btn {
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  background-image: none;
+  border: none;
+  white-space: nowrap;
+  font-weight: normal;
+  color: $text-btn;
+  border-radius: 2px;
+
+  // selection status
+  &::selection { border: 0; outline: 0; background: 0; }
+
+  // focus status
+  &:active, &.active {
+	outline: 0;
+	background-image: none;
+	@include box-shadow(inset 0 3px 5px rgba(0, 0, 0, .125));
+	padding-top: 1px;
+  }
+
+  // not allowed click status
+  &:disabled, &.disabled {
+	cursor: not-allowed;
+	background-color: $disabled;
+	pointer-events: none;
+  }
+}
+
+// button style
+$animal-data: (default, $default), (primary, $primary), (info, $info);
+@each $animal, $bg in $animal-data {
+  .btn-#{$animal} {
+	background-color: $bg;
+  }
+}
+
+// button size
+$animal-data: (sm, 20px, 10px, $sm), (md, 30px, 16px, $md), (lg, 40px, 26px, $lg);
+@each $animal, $btn-height, $btn-padding, $btn-font-size in $animal-data {
+  .btn-#{$animal} {
+	height: $btn-height;
+	line-height: $btn-height;
+	padding: 0 $btn-padding;
+	font-size: $btn-font-size;
+  }
+}
+

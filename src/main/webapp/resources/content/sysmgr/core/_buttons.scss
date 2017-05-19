@@ -1,0 +1,78 @@
+// buttons
+// --------------------------------------------------
+
+.btn {
+  $padding-base-vertical: .5em;
+  $padding-base-horizontal: 3.1em;
+  $font-size-base: 1.6em;
+  $line-height-base: 1.4em;
+  $btn-border-radius-base: 0;
+  @include button-size($padding-base-vertical, $padding-base-horizontal, $font-size-base, $line-height-base, $btn-border-radius-base);
+  display: inline-block;
+  margin-bottom: 0;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  font-weight: normal;
+
+  &:active, &.active {
+	outline: 0;
+	background-image: none;
+	@include box-shadow(inset 0 3px 5px rgba(0, 0, 0, .125));
+  }
+
+  &.disabled, &[disabled] {
+	@include opacity(.65);
+	@include box-shadow(none);
+	pointer-events: none;
+  }
+}
+
+a.btn {
+  &.disabled,
+  fieldset[disabled] & {
+	pointer-events: none;
+  }
+}
+
+a.red, .imp {
+  color: #ea1b42 !important;
+  &:hover {
+	text-decoration: underline;
+  }
+}
+
+a.blue {
+  color: #002bf7;
+  margin: 0 3px;
+  &:hover {
+	text-decoration: underline;
+  }
+}
+
+// alternate buttons
+$animal-data: (default, #fff, #8e8e8e, #adadad), (success, #fff, #5cb85c, #4cae4c), (info, #fff, #1daa62, #1daa62),
+		(warning, #fff, #f88700, #f88700), (danger, #fff, #e50000, #e50000);
+@each $animal, $color, $bg, $border in $animal-data {
+  .btn-#{$animal} {
+	@include button-variant($color, $bg, $border);
+  }
+}
+
+// button sizes
+$animal-data: (lg, .2em, .5em, 1.2em, 1.5em, .4em), (sm, .2em, .5em, 1.2em, 1.5em, .4em), (xs, 0em, 34px, 1.5em, 28px, 0);
+@each $animal, $padding-vertical, $padding-horizontal, $font-size, $line-height, $border-radius in $animal-data {
+  .btn-#{$animal} {
+	@include button-size($padding-vertical, $padding-horizontal, $font-size, $line-height, $border-radius)
+  }
+}
+.imp-noline{
+  font-size: 14px;
+  &:hover{
+    text-decoration: none !important;
+  }
+}

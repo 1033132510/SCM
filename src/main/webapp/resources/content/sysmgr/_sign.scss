@@ -1,0 +1,102 @@
+.login {
+  position: fixed;
+  @include square(100%);
+  @include bg-cover;
+  background-color: #f7f7f7;
+  .login-wrapper {
+	position: fixed;
+	@include box-center(474px, 620px);
+  }
+  .backend-logo {
+	background: url("../images/sysmgr/backend-logo.png") no-repeat;
+	@include size(474px, 187px);
+  }
+  .login-shadow {
+	//background-color: #000;
+	@include size(360px, 407px);
+	background: url("../images/sysmgr/login-shadow.png") bottom no-repeat;
+	margin: 0 auto;
+	.form-error {
+	  position: relative;
+	  height: 61px;
+	  .error {
+		color: #f00;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+	  }
+	  .forget-password {
+		position: absolute;
+		margin: 0;
+		right: 0;
+		bottom: -3px;
+	  }
+	}
+	form {
+	  @include size(350px, 370px);
+	  background-color: #fff;
+	  border: 1px solid #dfdfdf;
+	  margin: 60px auto 0;
+	  h2 {
+		font-size: 18px;
+		text-align: center;
+		color: #373737;
+		margin: 18px auto;
+	  }
+	  .form-group {
+		width: 300px;
+		margin: 0 auto;
+		input {
+		  border: 1px solid #dfdfdf;
+		  background-color: #fff;
+		  padding-left: 40px;
+		  @include size(300px, 43px);
+		  margin: 0 auto;
+		}
+		label {
+		  background: url("../images/sysmgr/login-icon.png") no-repeat;
+		  @include size(22px, 27px);
+		  top: 9px;
+		  left: 10px;
+		  &.user {
+			background-position: -6px -7px;
+		  }
+		  &.password {
+			background-position: -6px -83px;
+		  }
+		  &.code {
+			background-position: -6 -170px;
+		  }
+		}
+	  }
+	  .form-code {
+		input {
+		  width: 150px;
+		}
+		img {
+		  @include size(80px, 43px);
+		  margin-left: 7px;
+		}
+		.btn {
+		  @include size(63px, 43px);
+		  padding: 0;
+		  font-size: 14px;
+		  text-align: center;
+		  line-height: 41px;
+		}
+	  }
+	  .lg-btn {
+		width: 300px;
+		height: 41px;
+		margin: 30px auto 0 auto;
+		display: block;
+	  }
+	  .forget-password {
+		margin-top: -12px;
+		color: #727272;
+		display: block;
+		text-decoration: underline;
+	  }
+	}
+  }
+}

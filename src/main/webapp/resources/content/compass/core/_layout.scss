@@ -1,0 +1,43 @@
+.container { width: 1200px; @include center-block; }
+
+.container-fluid { width: 100%; }
+
+.row { @include clearfix; }
+
+@for $i from 1 through 12 {
+  .col-#{$i} {
+	width: $i / 12   * 100%;
+	min-height: 1px;
+	float: left;
+	padding-left: 15px;
+	padding-right: 15px;
+  }
+}
+
+@for $i from 1 through 12 {
+  .col-offset-#{$i} {
+	margin-left: $i / 12 * 100%;
+  }
+}
+
+$animal-list: top, right, bottom, left;
+@each $animal in $animal-list {
+  @for $i from 1 through 6 {
+	.margin-#{$animal}-#{$i * 5} {
+	  margin-#{$animal}: $i * 5px;
+	}
+  }
+}
+
+$animal-list: top, right, bottom, left;
+@each $animal in $animal-list {
+  @for $i from 1 through 18 {
+	.padding-#{$animal}-#{$i * 5} {
+	  padding-#{$animal}: $i * 5px !important;
+	}
+  }
+}
+
+.hide { display: none !important; }
+
+.show { display: block !important; }

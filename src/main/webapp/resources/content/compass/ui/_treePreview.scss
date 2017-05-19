@@ -1,0 +1,149 @@
+// tree preview style start -------------------------------------------------
+.tree-preview {
+  padding-left: 200px;
+  position: relative;
+  min-height: 700px;
+  // tree style start -------------------------------------------------------
+  .tree {
+	position: absolute;
+	width: 180px;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	background-color: #2a2e33 !important;
+	overflow: hidden;
+	.mCSB_container {
+	  margin-right: 0;
+	}
+	li {
+	  position: relative;
+	  font-size: 12px;
+	  background-color: #141518;
+	  // tree arrow style start ----------------------------------------------
+	  .switch {
+		position: absolute;
+		top: 0;
+		left: 0;
+		display: block;
+		cursor: pointer;
+		z-index: 10;
+		&:after {
+		  content: '';
+		  position: absolute;
+		  @include border-arrow-rgt(4px, 4px, #7e868c);
+		  top: 50%;
+		  left: 50%;
+		  margin: -4px 0 0 -2px;
+		}
+		@for $i from 0 to 8 {
+		  &.level#{$i} {
+			width: 22px + 10px * $i;
+			height: 30px;
+		  }
+		}
+		@for $i from 0 to 3 {
+		  &.level#{$i} {
+			height: 60px - 10px * $i;
+		  }
+		}
+		&.root_open, &.center_open, &.bottom_open {
+		  &:after {
+			@include border-arrow-btm(4px, 4px, #7e868c);
+			margin: -2px 0 0 -4px;
+		  }
+		}
+	  }
+	  // tree arrow style end ------------------------------------------------
+	  a {
+		@include size(100%, auto);
+		@include text-overflow;
+		color: #d5d8dd;
+		display: block;
+		padding-left: 22px;
+		position: relative;
+		line-height: 30px;
+		padding-right: 52px;
+
+		// tree btn add style start ------------------------------------------
+		.btn-add, .btn-remove {
+		  @include square(26px);
+		  @include text-hide;
+		  position: absolute;
+		  cursor: pointer;
+		  top: 50%;
+		  margin-top: -13px;
+		  right: 26px;
+		  cursor: pointer;
+		  &:before, &:after {
+			position: absolute;
+			content: '';
+			background-color: #7e868c;
+		  }
+		  &:before {
+			@include box-center(10px, 2px);
+		  }
+		  &:after {
+			@include box-center(2px, 10px);
+		  }
+		  &:active {
+			&:before, &:after {
+			  background-color: #149c57;
+			}
+		  }
+		}
+		.btn-remove {
+		  right: 0;
+		  &:after {
+			display: none;
+		  }
+		}
+		// tree btn add style start ------------------------------------------
+		@for $i from 1 to 8 {
+		  &.level#{$i} {
+			padding-left: 22px + 10px*$i;
+			line-height: 30px;
+		  }
+		}
+		// tree select style start -------------------------------------------
+		&.curSelectedNode {
+		  color: #1daa62 !important;
+		}
+		// tree select style end ---------------------------------------------
+	  }
+
+	  a.level0 {
+		position: static;
+		> span.btn-add {
+		  top: 30px;
+		  cursor: pointer;
+		}
+		.button {
+		  top: 30px;
+		}
+	  }
+
+	  $animal-data: (0, #2a2e33, #7e868c, 16px, 60px), (1, #212429, #65707c, 14px, 50px), (2, #1d1f23, #afb7c3, 12px, 40px),
+			  (3, #191b1e, #d5d8dd, 12px, 30px), (4, #141518, #fff, 12px, 30px);
+	  @each $animal, $bg, $color, $size, $line in $animal-data {
+		&.level#{$animal} {
+		  background-color: $bg;
+		  font-size: $size;
+		  a.level#{$animal} {
+			color: $color;
+			line-height: $line;
+		  }
+		}
+	  }
+	  &:focus {
+		outline: none;
+	  }
+	}
+  }
+  // tree style end ---------------------------------------------------------
+}
+
+// tree preview style end----------------------------------------------------
+
+.tree-preview .tree li .switch:last-child:after {
+  border-style: none;
+}

@@ -1,0 +1,110 @@
+.classify {
+  .classify-wrapper { width: 896px; float: right; @include clearfix; }
+  .pagination { margin: 90px 0; }
+  .bread { font-size: 16px; }
+}
+
+// classify
+.classify-group { @include clearfix; margin: 0 -8px 0 -8px;
+  > li { @include size(212px, 324px); float: left; border: 1px solid $color-border;
+	margin: 16px 8px 0; @include transition(.4s border ease); position: relative; overflow: hidden;
+	&:before, &:after { background-color: $white; content: ''; @include size(100%, 1px);
+	  width: 100%; height: 1px; position: absolute; left: 0; @include transition(.4s background ease);
+	}
+	&:before { top: 0; }
+	&:after { bottom: 0; }
+
+	.big-img { @include square(210px); padding: 5px; display: block; position: relative; cursor: pointer;
+	  span { position: absolute; top: 0; left: 0; padding: 5px; @include square(100%); }
+	  img { @include square(100%); }
+	}
+	.sm-img { @include size(204px, 30px); margin: 5px auto 10px; overflow: hidden; position: relative;
+	  div { @include clearfix; @include size(100%, 100%); position: absolute; left: 0; top: 0; }
+	  span { padding: 0 2px; @include size(34px, 30px); cursor: pointer; float: left;
+		img { @include square(100%); box-sizing: border-box; border: 1px solid #e1e1e1; }
+		&:focus { outline: none; }
+		&.on {
+		  img { border: 1px solid $green-dark; }
+		}
+	  }
+	  
+	}
+	.txt { @include size(100%, 38px); padding: 0 5px; margin-top: 7px; color: $color-main; display: block;
+	  line-height: 18px; overflow: hidden; cursor: pointer;
+	  &:hover { color: $green-light; }
+	}
+	.price { @include size(100%, 15px); margin: 0 auto; padding: 0 5px; line-height: 16px; font-size: 16px; color: #ff4200; display: block;
+	  &:hover { color: #ff4200; text-decoration: none; }
+	  &:before, &:after { background-color: $white; content: ''; @include size(1px, 100%);
+		position: absolute; top: 0; @include transition(.4s background ease);
+	  }
+	  &:before { left: 0; }
+	  &:after { right: 0; }
+	}
+	&:hover { z-index: 1111; border-color: $green-light;
+	  &:before, &:after, .price:before, .price:after { background-color: $green-light; }
+	}
+  }
+}
+
+// search
+.search-wrap, .search-category { border-top: 1px solid $color-border;
+  li { @include clearfix; font-size: 12px; padding: 4px 0 4px 10px; border-top: 1px dashed $color-border;
+	position: relative; overflow: hidden; margin-top: -1px;
+	.more { position: absolute; right: 4px; top: 16px; cursor: pointer; padding-right: 15px;
+	  color: $color-main; overflow: hidden; @include size(39px, 16px);
+	  span, i { position: absolute; left: 0; top: 0; @include size(24px, 32px); @include transition(.4s top ease); }
+	  em, s { display: block; @include size(100%, 50%); text-decoration: none; }
+	  i { @include size(15px, 32px); left: 24px;
+		.s1 { @include bg-image(15px, 16px, 0, -467px); }
+		.s2 { @include bg-image(15px, 16px, 0, -511px); }
+	  }
+	  &:hover { color: $green-dark;
+		s { color: $green-dark; }
+	  }
+	}
+	&.max-height { height: 49px; }
+	&.on { height: auto;
+	  .more {
+		span, i { top: -16px; }
+	  }
+	}
+	.import-price { position: absolute; right: 0; @include size(195px, 30px); top: 50%; margin-top: -15px;
+	  input { @include size(50px, 30px); border: 1px solid $color-border; margin: 0 5px; text-align: center; line-height: 30px; }
+	  a { @include size(50px, 30px); border: 1px solid $color-border; margin: 0 0 0 5px;
+		float: right; background-color: #f1f1f1; text-align: center; line-height: 28px; color: $color-main;
+	  }
+	}
+	dl { @include clearfix; }
+	dt { @include size(88px, auto); float: left; color: #9c9c9c; padding-top: 12px; }
+	dd { float: left; width: 768px;
+	  a { color: $color-main; float: left; margin: 12px 45px 12px 0; cursor: pointer;
+		&:hover, &.selected { color: $green-dark; }
+	  }
+	}
+	&.select-result { border-top: 1px solid $color-border; padding: 7px 0;
+	  a { height: 20px; line-height: 18px; padding: 0 25px 0 7px; border: 1px solid $color-border; font-size: 12px;
+		margin: 3px 6px 3px 0; position: relative; float: left;
+		em { position: absolute; padding-right: 5px; right: 0; line-height: 16px; text-align: right; color: #e0e0e0; width: 25px; }
+		&:hover { border-color: $red-dark;
+		  em { color: $red-dark; cursor: pointer; }
+		}
+	  }
+	}
+  }
+}
+
+.search-category { background-color: #f8f8f8;
+  li dd a { padding: 0 3px;
+	&.selected { background-color: $green-light; color: $white; }
+  }
+}
+
+// class-search
+.class-search { border: 1px solid $color-border; padding: 10px 20px; @include clearfix;
+  span { color: $red-dark; font-size: 12px; float: left; height: 30px; line-height: 30px; }
+  input { float: left; @include size(380px, 30px); border: 1px solid $color-border; margin: 0 10px; padding-left: 10px; }
+  a { float: left; @include size(110px, 30px); background-color: $green-light; color: $white; line-height: 30px; text-align: center; font-size: 14px; cursor: pointer;
+	&:active { outline: 0; background-image: none; @include box-shadow(inset 0 3px 5px rgba(0, 0, 0, .125)); }
+  }
+}
